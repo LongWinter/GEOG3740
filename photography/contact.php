@@ -1,5 +1,5 @@
 <?php
-    $to = 'demo@spondonit.com';
+    $to = 'ye.yuanemail@gmail.com';
     $from = $_POST["name"];
     $from = $_POST["email"];
     $from = $_POST["message"];
