@@ -2131,6 +2131,10 @@ nav a:hover {
   background-color: transparent;
 }
 
+.sticky-wrapper-blog {
+  background-color: #222;
+}
+
 .is-sticky .default-header {
   height: 72px !important;
   background-color: #222;
