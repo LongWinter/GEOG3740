@@ -30,6 +30,41 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
 
+	<style>
+		.single-blog h4{
+			text-overflow: ellipsis; /* will make [...] at the end */
+			width: 370px; /* change to your preferences */
+			height: 40px; /* change to your preferences */
+
+			overflow:hidden; /* older browsers */
+		}
+
+		.single-blog .text-area{
+			min-height: 200px;
+		}
+
+		.twitter-timeline {
+			max-width: 100%;
+			max-height: 1000px;
+		}
+		.fa {
+			font-size: 25px;
+			color: #FFFFFF;
+		}
+		.panel-title {
+			font-size: 25px;
+			color: #FFFFFF;
+			font-family: 'Open Sans', sans-serif;
+		}
+		.panel-heading {
+			background-color: #1da1f2 !important;
+			color: #1da1f2 !important;
+		}
+		.panel {
+			margin-top: 25px;
+		}
+
+	</style>
 </head>
 
 <body>
@@ -51,11 +86,8 @@
 							<a href="#about">Course</a>
 							<a href="#gallery">Gallery</a>
 							<a href="#blog">Blog</a>
-							<!-- <a href="#contact">Contact</a> -->
-							<!-- <a href="generic.html">Generic</a>
-							<a href="elements.html">Elements</a> -->
 						</nav>
-						<div class="menu-bar">
+						<div class="d-md-none menu-bar">
 							<span class="lnr lnr-cross "></span>
 						</div>
 					</div>
@@ -149,7 +181,9 @@
 		<div class="container">
 			<div class="row d-flex align-items-center">
 				<div class="col-lg-6 about-left">
-					<img class="img-fluid" src="img/about-img.jpg" alt="">
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k5JqHLbZP_0" allowfullscreen></iframe>
+					</div>
 				</div>
 				<div class="col-lg-6 about-right">
 					<h1>
@@ -246,31 +280,12 @@
 					<a href="img/p8.jpg">
 						<img src="img/p8.jpg" alt="">
 					</a>
-					<a href="img/p9.jpg">
-						<img src="img/p9.jpg" alt="">
-					</a>
-					<a href="img/p10.jpg">
-						<img src="img/p10.jpg" alt="">
-					</a>
-					<a href="img/p11.jpg">
-						<img src="img/p11.jpg" alt="">
-					</a>
-					<a href="img/p12.jpg">
-						<img src="img/p12.jpg" alt="">
-					</a>
-					<a href="img/p13.jpg">
-						<img src="img/p13.jpg" alt="">
-					</a>
-					<a href="img/p14.jpg">
-						<img src="img/p14.jpg" alt="">
-					</a>
-					<a href="img/p15.jpg">
-						<img src="img/p15.jpg" alt="">
-					</a>
-					<a href="img/p16.jpg">
-						<img src="img/p16.jpg" alt="">
-					</a>
 	
+				</div>
+
+				<hr>
+				<div class="col-lg-12 text-center d-flex justify-content-end send-btn">
+					<button class="submit-btn primary-btn mt-20 text-uppercase ">Read More<span class="lnr lnr-arrow-right"></span></button>
 				</div>
 			</div>
 		</section>
@@ -293,19 +308,19 @@
 							<h4>
 								<a href="#">Portable Fashion for young women</a>
 							</h4>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea.
-								 commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-							</p>
+							<div class="text-area">
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea.
+									commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+								</p>
+							</div>
 							<div class="bottom d-flex justify-content-between align-items-center flex-wrap">
 								<div>
 									<img class="img-fluid" src="img/user.png" alt="">
 									<a href="#"><span>Mark Wiens</span></a>
 								</div>
 								<div class="meta">
-									13th Dec
-									<span class="lnr lnr-heart"></span> 15
-									<span class="lnr lnr-bubble"></span> 04
+									<span class="lnr lnr-calendar-full"></span> 13th Dec
 								</div>
 							</div>
 						</div>
@@ -314,19 +329,20 @@
 							<h4>
 								<a href="#">Summer ware are coming</a>
 							</h4>
+							<div class="text-area">
+
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea.
 								 commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 							</p>
+							</div>
 							<div class="bottom d-flex justify-content-between align-items-center flex-wrap">
 								<div>
 									<img class="img-fluid" src="img/user.png" alt="">
 									<a href="#"><span>Mark Wiens</span></a>
 								</div>
 								<div class="meta">
-									13th Dec
-									<span class="lnr lnr-heart"></span> 15
-									<span class="lnr lnr-bubble"></span> 04
+									<span class="lnr lnr-calendar-full"></span> 13th Dec
 								</div>
 							</div>
 						</div>
@@ -335,26 +351,33 @@
 							<h4>
 								<a href="#">Summer ware are coming</a>
 							</h4>
+							<div class="text-area">
+
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
 							</p>
+							</div>
 							<div class="bottom d-flex justify-content-between align-items-center flex-wrap">
 								<div>
 									<img class="img-fluid" src="img/user.png" alt="">
 									<a href="#"><span>Mark Wiens</span></a>
 								</div>
 								<div class="meta">
-									13th Dec
-									<span class="lnr lnr-heart"></span> 15
-									<span class="lnr lnr-bubble"></span> 04
+									<span class="lnr lnr-calendar-full"></span> 13th Dec
 								</div>
 							</div>
-						</div>												
+						</div>
 					</div>
-				</div>	
+					<div class="row">
+						<div class="col-lg-12 text-center d-flex justify-content-end send-btn">
+							<button class="submit-btn primary-btn mt-20 text-uppercase ">Read More<span class="lnr lnr-arrow-right"></span></button>
+						</div>
+					</div>
+					<hr>
+				</div>
 			</section>
-			<!-- end blog Area -->	
-	
+			<!-- end blog Area -->
+
 
 
 
@@ -366,39 +389,22 @@
 							<img class="img-fluid" src="img/contact-img.jpg" alt="">
 						</div>
 						<div class="col-lg-7 col-md-12 contact-right no-padding">
-							<h1>Send me Message</h1>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua.
-							</p>
-							<form class="booking-form" id="myForm" action="contact.php">
-								 	<div class="row">
-								 		<div class="col-lg-12 d-flex flex-column">
-							 				<input name="name" placeholder="Your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your name'" class="form-control mt-20" required="" type="text" required>
-								 		</div>
-							 			<div class="col-lg-12 d-flex flex-column">
-											<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mt-10" required="" type="email">
-										</div>									
-										<div class="col-lg-12 flex-column">
-											<textarea class="form-control mt-20" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
-										</div>
-										
-										<div class="col-lg-12 d-flex justify-content-end send-btn">
-											<button class="submit-btn primary-btn mt-20 text-uppercase ">confirm booking<span class="lnr lnr-arrow-right"></span></button>
-										</div>
-
-										<div class="alert-msg"></div>		
-									</div>
-					  		</form>
+							<div class="row">
+								<h1>Send me Message</h1>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua.
+								</p>
+								<div class="col-lg-12">
+									<a class="twitter-timeline" data-height="500" data-width="100%" href="https://twitter.com/HarvestMoonSoc?ref_src=twsrc%5Etfw">Tweets by HarvestMoonSoc</a>
+								</div>
+								<div class="alert-msg"></div>
 							</div>
-						</div>						
+							</div>
+						</div>
 					</div>
-				</div>	
+				</div>
 			</section>
 	<!-- End contact Area -->
-	<section>
-			<a class="twitter-timeline" data-lang="en" data-width="500" data-height="500" data-dnt="true" data-link-color="#2B7BB9" href="https://twitter.com/HarvestMoonSoc?ref_src=twsrc%5Etfw">Tweets by HarvestMoonSoc</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-	</section>
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLx0sYbCqOb8TBPRdmBHs5Iftvv9TPboYG" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 						<!-- map -->
 	<section class="">
@@ -449,6 +455,8 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<script type="text/javascript" src="js/simple-lightbox.min.js"></script>
 	<script src="js/main.js"></script>
+	<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 </body>
 
 </html>

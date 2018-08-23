@@ -39,30 +39,30 @@ $(document).ready(function(){
      
    // -------   Active Mobile Menu-----//
 
-  $(".menu-bar").on('click', function(e){
-      e.preventDefault();
-      $("nav").toggleClass('hide');
-      $("span", this).toggleClass("lnr-menu lnr-cross");
-      $(".main-menu").addClass('mobile-menu');
-  });
+    $(".menu-bar").on('click', function(e){
+        e.preventDefault();
+        $("nav").toggleClass('hide');
+        $("span", this).toggleClass("lnr-menu lnr-cross");
+        $(".main-menu").addClass('mobile-menu');
+    });
 
 
-  $('.nav-item a:first').tab('show');
+    $('.nav-item a:first').tab('show');
 
 
-     if(document.getElementById("gallery")){
-          $('select').niceSelect();
+    if(document.getElementById("gallery")){
+        $('select').niceSelect();
     };
 
 
-   if(document.getElementById("default-select")){
-      $('.img-pop-up').magnificPopup({
-          type: 'image',
-          gallery:{
-          enabled:true
-          }
-      });  
-  };
+    if(document.getElementById("default-select")){
+        $('.img-pop-up').magnificPopup({
+            type: 'image',
+            gallery:{
+                enabled:true
+            }
+        });
+    };
 
 
   $('.gal a').simpleLightbox();
