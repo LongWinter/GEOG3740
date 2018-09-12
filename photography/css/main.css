@@ -2619,3 +2619,8 @@ h6 {
 .switch-wrap p {
   margin: 0;
 }
+
+.cool-img{
+  max-height: 30px;
+  max-width: 30px
+}
