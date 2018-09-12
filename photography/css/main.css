@@ -2669,3 +2669,7 @@ h6 {
     display: none;
   }
 }
+.cool-img{
+  max-height: 30px;
+  max-width: 30px
+}
