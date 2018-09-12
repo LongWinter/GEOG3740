@@ -2669,7 +2669,19 @@ h6 {
     display: none;
   }
 }
+
+.video-banner h1{
+  color: #FFFFFF;
+}
+.video-banner h2{
+  color: #FFFFFF;
+}
 .cool-img{
   max-height: 30px;
   max-width: 30px
+}
+
+.blog-area .text-area{
+  height: 300px;
+  overflow: auto;
 }
